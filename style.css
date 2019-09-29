@@ -10,6 +10,7 @@ body {
     width: 980px;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     background-image: url(images/beanstalk.png);
+    color: #777;
 }
 
 h1 {
@@ -28,6 +29,14 @@ h1 {
     background-color: #fff!important;
 }
 
+.navbar-light .navbar-nav .active>.nav-link {
+    color: #777;
+}
+.second-item {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
 .main-content{
     border: 2px solid #ccc;
     background-color: #fff;
@@ -35,7 +44,8 @@ h1 {
 
 
 .main-content-header {
-    border-bottom: 3px #666;
+    border-bottom: 3px solid #ccc;
+    color: #4aaaa5;
 }
 
 .footer-content {
@@ -48,7 +58,9 @@ h1 {
 
 /*I put all placement elements here*/
 
+/* 980 screens */
 @media (min-width: 980px) {
+
     .main-navigation, .footer-content{
         max-width: 980px;
         margin-left: 0;
@@ -56,7 +68,7 @@ h1 {
         padding: 0 150px;
 
     }
-    .navbar-expand-lg {
+    .navbar-expand-md{
         min-width: 100%;
     }
 
@@ -84,10 +96,67 @@ h1 {
         padding-left: 25px!important;
         padding-right: 25px!important;
     }
+    
+    .main-content{
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
 
-    .second-item {
-        border-left: 1px solid #ccc;
-        border-right: 1px solid #ccc;
+    .main-content .row .col-md-8{ 
+        border-bottom: 3px solid #ccc;
+    }
+    .main-content-copy {
+        margin-top: 50px;
+    }
+    
+    .main-content-header {
+        width: 250px;
+        margin: 20px 0 20px 0;
+    }
+    .footer-content {
+        margin-top: 50px;
+        padding: 20px 0 20px 0;
+    }
+    
+}
+
+/* 768 screens */
+@media (max-width: 768px) {
+
+    .main-navigation, .footer-content{
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 150px;
+
+    }
+    .navbar-expand-md{
+        min-width: 100%;
+    }
+
+    .main-content {
+        width: 720px;
+    }
+
+    .col-md-6 {
+        padding-left:0;
+        padding-right:0;
+
+    }
+    
+    .navbar-logo {
+        padding: 30px 20px 30px 20px;
+        margin-top: -5px;
+    }
+
+    .menu-items {
+        margin-top:10px;
+        text-align: center;
+    }
+
+    .nav-link {
+        padding-left: 25px!important;
+        padding-right: 25px!important;
     }
     
     .main-content{
@@ -111,5 +180,108 @@ h1 {
         padding: 20px 0 20px 0;
     }
     
+}
 
+/* 640 screens */
+@media (max-width: 640px) {
+
+    body {
+        width: 100%;
+    }
+    
+    p {
+        margin-top:10px;
+    }
+
+    .main-navigation.row {
+        margin: 0;
+    }
+
+    .main-navigation, .footer-content{
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+
+    }
+    .navbar-expand-md {
+        min-width: 100%;
+        padding: 0 40px;
+
+    }
+
+    .main-content {
+        width: 600px;
+        margin-top: 50px;
+        margin-left: 50px;
+        padding-bottom: 50px;
+    }
+
+    .container.main-navigation .row .col-md-6 {
+        padding-left:0;
+        padding-right:0;
+        margin-bottom: -40px;
+    }
+    
+    .navbar-logo {
+        padding: 30px 0px 30px 0px;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        padding: 0 150px 10px 150px;
+        border-bottom: 3px solid #ccc; /*UGH I HAD TO BRING THE BORDER HERE, AS THE ROW WOULDN'T HAVE IT UGH*/
+    }
+
+    .menu-items {
+        margin-top:10px;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+    .collapse .navbar-collapse {
+        display: block!important;
+    }
+    .collapse:not(.show) {
+        display: block!important;
+    }
+    .nav-link {
+        padding-left: 25px!important;
+        padding-right: 25px!important;
+    }
+
+    .main-content-header {
+        width: 250px;
+        margin: 20px 0 20px 0;
+    }
+
+    .col-md-6 > p {
+        width: 97%;
+        padding: 0 18px;
+    }
+
+    .main-content .row .col-md-10{ 
+        width: 90%;
+        margin-left: 5%;
+    }
+    .main-content-copy {
+        margin-top: 20px;
+        padding-left: 5%
+    }
+
+    .image-main {
+        width: 90%;
+        position: relative;
+        left: 2px;
+    }
+
+
+    .footer-content {
+        margin-top: 50px;
+        padding: 20px 0 20px 0;
+    }
+    
 }
