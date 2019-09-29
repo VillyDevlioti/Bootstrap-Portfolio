@@ -251,7 +251,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     
     .navbar-logo {
-        padding: 30px 20px 30px 20px;
+        padding: 7% 7%;
         margin-top: -5px;
     }
 
@@ -453,9 +453,10 @@ h1, h2, h3, h4, h5, h6 {
     }
     .navbar-expand-md {
         min-width: 100%;
-        padding: 2% 5% 2% 25%;
+        padding:2% 0% 2% 12%;
         margin-bottom: 5%;
         border-bottom: 3px solid #ccc;
+        font-size: 30%;
     }
 
     .main-content {
