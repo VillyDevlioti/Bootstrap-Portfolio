@@ -13,9 +13,18 @@ body {
     color: #777;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
+
+.col-md-5.portfolio-images >h4 {
+    background-color: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: #fff;
+    font-size: 24px;
+    text-align:center;
+}
+
 .main-navigation{
     border-bottom: 3px solid #cccccc;
     background-color: #fff;
@@ -130,6 +139,18 @@ h1 {
         margin-top: 0px;
     }
 
+    .portfolio-images {
+        margin-top: 3%;
+        margin-left: 3%;
+        padding: 2%;
+        max-width: 80%;
+    }
+    .col-md-5.portfolio-images >h4 {
+        position: relative;
+        top: -22%;
+        padding: 6%;
+    }
+
     .footer-content {
         margin-top: 50px;
         padding: 20px 0 20px 0;
@@ -179,17 +200,22 @@ h1 {
         margin-top: 5%;
         padding-bottom: 5%;
     }
-
-    .main-content-copy {
-        margin-top: 50px;
+    
+    .main-content-form {
+       margin-top: 0px;
     }
     
-    .main-content-header {
-        width: 250px;
-        margin: 20px 0 0 0;
+    .portfolio-images {
+        margin-top: 3%;
+        margin-left: 3%;
+        padding: 2%;
+        max-width: 80%;
     }
-    .main-content-form {
-        margin-top: 0px;
+
+    .col-md-5.portfolio-images >h4 {
+        position: relative;
+        top: -22%;
+        padding: 6%;
     }
 
     .footer-content {
@@ -218,7 +244,7 @@ h1 {
         margin-left: 5%;
     }
 
-    .container.main-navigation .row .col-md-6 {
+    .container.main-navigation .row .col-md-6, .container.main-navigation .row {
         padding-left:0;
         padding-right:0;
 
@@ -259,6 +285,19 @@ h1 {
         width: 100%;
     }
 
+    .portfolio-images {
+        margin-top: 2%;
+        margin-left: 2%;
+        margin-bottom: -5%;
+        padding: 1.5%;
+        max-width: 80%;
+    }
+    .col-md-5.portfolio-images >h4 {
+        position: relative;
+        top: -22%;
+        padding: 6%;
+    }
+
     .footer-content {
         margin-top: 5%;
         padding: 5% 0;
@@ -268,7 +307,7 @@ h1 {
 }
 
 /* 640 screens */
-@media (max-width: 640px) {
+@media (min-width: 640px) and (max-width:767px){
 
     body {
         width: 100%;
@@ -297,7 +336,7 @@ h1 {
 
     .main-content {
         max-width: 80%;
-        margin-left: 2%;
+        margin-left: 5%;
         margin-top: 10%;
         padding-bottom: 10%;
     }
@@ -309,7 +348,7 @@ h1 {
     }
     
     .navbar-logo {
-        padding: 7% 0 3% 0;
+        padding: 7% 0 7% 0;
         margin: 0;
         width: 100%;
         text-align: center;
@@ -361,6 +400,151 @@ h1 {
         position: relative;
         left: 1%;
     }
+
+    .portfolio-images {
+        margin-top: 3%;
+        margin-left: 3%;
+        padding: 2%;
+        max-width: 100%;
+    }
+
+    .col-md-5.portfolio-images >h4 {
+        position: relative;
+        top: -20%;
+        left: 3%;
+        padding: 4%;
+        width: 89%;
+    }
+
+    .col-md-5.portfolio-images >img {
+        width: 95%;
+        padding: 3%;
+    }
+
+
+
+    .footer-content {
+        margin-top: 10%;
+        padding: 5% 0%;
+    }
+    
+}
+
+/*639 and below screens*/
+@media (min-width: 320px) and (max-width:639px){
+
+    body {
+        width: 100%;
+    }
+    
+    p {
+        margin-top: 2%;
+    }
+
+    .main-navigation.row {
+        margin: 0;
+    }
+
+    .main-navigation, .footer-content{
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+
+    }
+    .navbar-expand-md {
+        min-width: 100%;
+        padding: 2% 5% 2% 25%;
+        margin-bottom: 5%;
+        border-bottom: 3px solid #ccc;
+    }
+
+    .main-content {
+        max-width: 80%;
+        margin-left: 5%;
+        margin-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    .container.main-navigation .row .col-md-6 {
+        padding-left:0;
+        padding-right:0;
+        margin-bottom: -10%;
+    }
+    
+    .navbar-logo {
+        padding: 7% 0 7% 0;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .menu-items {
+        margin-top:10px;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+    .collapse .navbar-collapse {
+        display: block!important;
+    }
+    .collapse:not(.show) {
+        display: block!important;
+    }
+    .nav-link {
+        padding-left: 25px!important;
+        padding-right: 25px!important;
+    }
+
+    .main-content-header {
+        width: 250px;
+        margin: 20px 0 20px 0;
+    }
+
+    .col-md-6 > p {
+        width: 97%;
+        padding: 0 5%;
+    }
+
+    .main-content .row .col-md-10{ 
+        width: 90%;
+        margin-left: 5%;
+    }
+    .main-content-copy {
+        margin-top: 20px;
+        padding-left: 5%
+    }
+
+    .image-main {
+        width: 90%;
+        position: relative;
+        left: 1%;
+    }
+
+    .portfolio-images {
+        margin-top: 3%;
+        margin-left: 3%;
+        padding: 2%;
+        max-width: 100%;
+    }
+
+    .col-md-5.portfolio-images >h4 {
+        position: relative;
+        top: -20%;
+        left: 3%;
+        padding: 4%;
+        width: 89%;
+    }
+
+    .col-md-5.portfolio-images >img {
+        width: 95%;
+        padding: 3%;
+    }
+
 
 
     .footer-content {
