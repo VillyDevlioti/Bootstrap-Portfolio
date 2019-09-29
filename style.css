@@ -73,15 +73,15 @@ h1 {
 }
 
 /*I put all placement elements here*/
+/*980px+ screens*/
 
-/* 980 screens */
 @media (min-width: 980px) {
 
     .main-navigation, .footer-content{
-        max-width: 980px;
+        max-width: 100%;
         margin-left: 0;
         margin-right: 0;
-        padding: 0 150px;
+        padding: 0 10%;
 
     }
     .navbar-expand-md{
@@ -89,7 +89,7 @@ h1 {
     }
 
     .main-content {
-        width: 720px;
+        width: 80%;
     }
 
     .col-md-6 {
@@ -114,8 +114,70 @@ h1 {
     }
     
     .main-content{
+        margin-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .main-content-copy {
         margin-top: 50px;
-        padding-bottom: 50px;
+    }
+    
+    .main-content-header {
+        width: 250px;
+        margin: 20px 0 0 0;
+    }
+    .main-content-form {
+        margin-top: 0px;
+    }
+
+    .footer-content {
+        margin-top: 50px;
+        padding: 20px 0 20px 0;
+    }
+    
+}
+
+/* 980 screens */
+@media (max-width: 980px) and (min-width: 769px) {
+
+    .main-navigation, .footer-content{
+        max-width: 100%;
+        margin-right: 0;
+        padding: 0 10%;
+
+    }
+    .navbar-expand-md{
+        min-width: 100%;
+        margin-top: 5%;
+    }
+
+    .main-content {
+        width: 90%;
+    }
+
+    .col-md-6 {
+        padding-left:0;
+        padding-right:0;
+
+    }
+    
+    .navbar-logo {
+        padding: 5% 5%;
+        margin-top: -1%;
+    }
+
+    .menu-items {
+        text-align: center;
+    }
+
+    .nav-link {
+        padding-left: 25px!important;
+        padding-right: 25px!important;
+    }
+    
+    .main-content{
+        margin-top: 5%;
+        padding-bottom: 5%;
     }
 
     .main-content-copy {
@@ -138,13 +200,13 @@ h1 {
 }
 
 /* 768 screens */
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 641px) {
 
     .main-navigation, .footer-content{
         max-width: 100%;
         margin-left: 0;
         margin-right: 0;
-        padding: 0 150px;
+        padding: 0 10%;
 
     }
     .navbar-expand-md{
@@ -152,10 +214,11 @@ h1 {
     }
 
     .main-content {
-        width: 720px;
+        width: 80%;
+        margin-left: 5%;
     }
 
-    .col-md-6 {
+    .container.main-navigation .row .col-md-6 {
         padding-left:0;
         padding-right:0;
 
@@ -176,17 +239,19 @@ h1 {
         padding-right: 25px!important;
     }
     
+
     .main-content{
-        margin-top: 50px;
-        padding-bottom: 50px;
+        margin-top: 5%;
+        padding-bottom: 5%;
     }
     .main-content-copy {
         margin-top: 50px;
     }
     
     .main-content-header {
-        width: 250px;
-        margin: 20px 0 20px 0;
+        width: 100%;
+        margin: 5% 2%;
+        padding-bottom: 2%;
     }
 
     .main-content-form {
@@ -195,8 +260,9 @@ h1 {
     }
 
     .footer-content {
-        margin-top: 50px;
-        padding: 20px 0 20px 0;
+        margin-top: 5%;
+        padding: 5% 0;
+        margin-left: 0;
     }
     
 }
@@ -209,7 +275,7 @@ h1 {
     }
     
     p {
-        margin-top:10px;
+        margin-top: 2%;
     }
 
     .main-navigation.row {
@@ -224,25 +290,26 @@ h1 {
     }
     .navbar-expand-md {
         min-width: 100%;
-        padding: 0 40px;
-
+        padding: 2% 5% 2% 25%;
+        margin-bottom: 5%;
+        border-bottom: 3px solid #ccc;
     }
 
     .main-content {
-        width: 600px;
-        margin-top: 50px;
-        margin-left: 50px;
-        padding-bottom: 50px;
+        max-width: 80%;
+        margin-left: 2%;
+        margin-top: 10%;
+        padding-bottom: 10%;
     }
 
     .container.main-navigation .row .col-md-6 {
         padding-left:0;
         padding-right:0;
-        margin-bottom: -40px;
+        margin-bottom: -10%;
     }
     
     .navbar-logo {
-        padding: 30px 0px 30px 0px;
+        padding: 7% 0 3% 0;
         margin: 0;
         width: 100%;
         text-align: center;
@@ -251,8 +318,6 @@ h1 {
     .navbar-nav {
         display: flex;
         flex-direction: row;
-        padding: 0 150px 10px 150px;
-        border-bottom: 3px solid #ccc; /*UGH I HAD TO BRING THE BORDER HERE, AS THE ROW WOULDN'T HAVE IT UGH*/
     }
 
     .menu-items {
@@ -279,7 +344,7 @@ h1 {
 
     .col-md-6 > p {
         width: 97%;
-        padding: 0 18px;
+        padding: 0 5%;
     }
 
     .main-content .row .col-md-10{ 
@@ -294,13 +359,13 @@ h1 {
     .image-main {
         width: 90%;
         position: relative;
-        left: 2px;
+        left: 1%;
     }
 
 
     .footer-content {
-        margin-top: 50px;
-        padding: 20px 0 20px 0;
+        margin-top: 10%;
+        padding: 5% 0%;
     }
     
 }
