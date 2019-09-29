@@ -1,3 +1,7 @@
+/*For this project I worked on the basis of how things look on 980, 768 and 640 screens. 
+I did not test for higher or lower resolutions*/
+
+/*I put all design elements here*/
 * {
     box-sizing: border-box;
   }
@@ -9,7 +13,6 @@ body {
 }
 
 h1 {
-
     font-family: 'Georgia', Times, Times New Roman, serif;
 }
 .main-navigation{
@@ -18,20 +21,7 @@ h1 {
 }
 .navbar-logo {
     background-color: #4aaaa5;
-    padding: 30px 20px 30px 20px;
     color: #fff;
-    margin-top: -5px;
-}
-
-.menu-items {
-    margin-top:10px;
-}
-
-.second-item {
-    border-right: 1px solid #ccc;
-    border-left: 1px solid #ccc;
-    padding-right: 15px;
-    padding-left: 15px;
 }
 
 .bg-light {
@@ -41,11 +31,85 @@ h1 {
 .main-content{
     border: 2px solid #ccc;
     background-color: #fff;
-    margin-top: 50px;
 }
 
+
 .main-content-header {
-    width: 250px;
-    margin: 20px 0 20px 0;
-    border-bottom: 3px #ccc;
+    border-bottom: 3px #666;
+}
+
+.footer-content {
+    background-color:#666666;
+    color: #fff;
+    border-top: 8px solid #4aaaa5;
+    text-align: center;
+    font-size: 12px;
+}
+
+/*I put all placement elements here*/
+
+@media (min-width: 980px) {
+    .main-navigation, .footer-content{
+        max-width: 980px;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 150px;
+
+    }
+    .navbar-expand-lg {
+        min-width: 100%;
+    }
+
+    .main-content {
+        width: 720px;
+    }
+
+    .col-md-6 {
+        padding-left:0;
+        padding-right:0;
+
+    }
+    
+    .navbar-logo {
+        padding: 30px 20px 30px 20px;
+        margin-top: -5px;
+    }
+
+    .menu-items {
+        margin-top:10px;
+        text-align: center;
+    }
+
+    .nav-link {
+        padding-left: 25px!important;
+        padding-right: 25px!important;
+    }
+
+    .second-item {
+        border-left: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+    }
+    
+    .main-content{
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .main-content .row .col-md-8{ 
+        border-bottom: 3px solid #ccc;
+    }
+    .main-content-copy {
+        margin-top: 50px;
+    }
+    
+    .main-content-header {
+        width: 250px;
+        margin: 20px 0 20px 0;
+    }
+    .footer-content {
+        margin-top: 50px;
+        padding: 20px 0 20px 0;
+    }
+    
+
 }
